@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <section class="container">
+    <h1>Treinando Responsividade<span id='emoji'></span></h1>
+    <div class="cards">
+      <div class="card">
+        <h2>Foto 1</h2>
+        <img src="img/historia_do_cafe_2.jpg" alt="">
+      </div><!--card-->
+      <div class="card">
+        <h2>Foto 2</h2>
+        <img src="img/tipos-de-cafe.jpg" alt="">
+      </div><!--card-->
+      <div class="card">
+        <h2>Foto 3 </h2>
+        <img src="img/tipos_de_tostado.jpg" alt="">
+      </div><!--card-->
+      <div class="card">
+        <h2>Foto 4 </h2>
+        <img src="img/tipos-tostado-cafe1.jpg" alt="">
+      </div><!--card-->
+      <div class="card">
+        <h2>Foto 5 </h2>
+        <img src="img/v4-460px-Make-a-Good-Pot-of-Coffee-Step-3-Version-4.jpg" alt="">
+      </div><!--card-->
+      <div class="card">
+        <h2>Foto 6 </h2>
+        <img src="img/capsulas-de-cafe-nespresso-600x400.jpg" alt="">
+      </div><!--card-->
+      <div class="card">
+        <h2>Foto 7 </h2>
+        <img src="img/café-696x504.png" alt="">
+      </div><!--card-->
+      <div class="card">
+        <h2>Foto 8 </h2>
+        <img src="img/plantacafe.jpg" alt="">
+      </div><!--card-->
+      <div class="card">
+        <h2>Foto 9 </h2>
+        <img src="img/eu-amo-cafe-600x400.jpg" alt="">
+      </div><!--card-->
+    </div><!--cards-->
+  </section><!--container-->
+
+  <script>
+    function randomEmoji(){
+      const emoji = Math.random()
+      if(emoji<0.2) return '😊'
+      if(emoji>0.2 && emoji<0.4) return '👽'
+      if(emoji>0.4 && emoji<0.6) return '🦊'
+      if(emoji>0.6 && emoji<0.8) return '👻'
+      if(emoji>0.8)return '💙'
+    }
+    const spanEmoji = document.getElementById('emoji');
+    //spanEmoji.innerHTML = randomEmoji()
+    setInterval(function(){
+      spanEmoji.innerHTML = randomEmoji()
+    },1000)
+  </script>
+</body>
+</html>
